@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site in India: Shopping </title>
+    <link rel="shortcut icon" href="mainLogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * 
+        {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        header
+        {
+            display: flex;
+            height: 70px;
+            width: 100%;
+            background-color: #131921;
+            align-items: center;
+        }
+
+        header .logo
+        {
+            width: 130px;
+            padding-left: 10px;
+        }
+        
+        header .logo img 
+        {
+            margin-top: 20px;
+            height: 40px;
+            width: 130px;
+        }
+
+        header .in
+        {
+            margin-top: 10px;
+            margin-right: 20px;
+            color: white;
+        }
+
+        header .location 
+        {
+            height: 60px;
+            width: 130px;
+            color: white;
+            padding-top: 8px;
+        }
+
+        header .location .del 
+        {
+            margin-top: 4px;
+            font-size: 14px;
+            margin-left: 18px;
+            color: grey;
+        }
+
+        header .location .loc 
+        {
+            display: flex;
+            margin-right: 3px;
+            width: 90px;
+            margin-top: 3px;
+            font-size: 16px;
+        }
+
+        header .location .loc img 
+        {
+            height: 20px;
+            margin-right: 4px;
+        }
+
+        header .box 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .location:hover 
+        {
+            border: 2px solid white;
+        }
+
+        header .box .all 
+        {
+            font-size: 16px;
+            margin-left: 5px;
+            height: 43px;
+            width: 50px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        header .box .searchtext 
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 17px;
+            padding-left: 5px;
+            height: 40px;
+            width: 650px;
+            border: none;
+        }
+
+        header .box .search 
+        {
+            display: flex;
+            height: 40px;
+            width: 45px;
+            background-color: rgb(255, 174, 0);
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        header .box .search img 
+        {
+            height: 25px;
+        }
+
+        header .flag 
+        {
+            display: flex;
+            color: white;
+            margin: 2px 15px;
+        }
+
+        header .flag:hover
+        {
+            border: 2px solid white;
+        }
+
+        header .flag span
+        {
+            margin-left: 3px;
+
+        }
+
+        header .flag img
+        {
+            height: 15px;
+            margin-top: 3px;
+        }
+
+        header .box2 
+        {
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+
+        header .box2 a
+        {
+            text-decoration: none;
+        }
+
+        header .box2:hover 
+        {
+            border: 2px solid white;
+        }
+
+        header .box2 .list 
+        {
+            display: flex;
+        }
+
+        header .box2 p 
+        {
+            font-size: 13px;
+            color: white;
+        }
+
+        header .box2 p b 
+        {
+            padding-right: 7px;
+            font-size: 17px;
+            color: white;
+        }
+
+        header .box3 
+        {
+            width: 100px;
+            margin: 0px;
+        }
+
+        header .box3 a
+        {
+            text-decoration: none;
+        }
+
+        header .box3 .r 
+        {
+            font-size: 13px;
+            color: white;
+        }
+
+        header .box3 .o 
+        {
+            font-size: 17px;
+            color: white;
+        }
+
+        header .box3:hover 
+        {
+            border: 2px solid white;
+        }
+
+        header .box4 
+        {
+            display: flex;
+            width: 100px;
+        }
+
+        header .box4 img 
+        {
+            height: 50px;
+        }
+
+        header .box4 p 
+        {
+            color: white;
+            margin-top: 15px;
+            margin-left: 4px;
+            font-size: 18px;
+        }
+
+        header .box4:hover 
+        {
+            border: 2px solid white;
+        }
+
+        .nav 
+        {
+            height: 50px;
+            width: 100%;
+            background-color: #232f3e;
+            color: white;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav .menu 
+        {
+            height: 25px;
+            padding-right: 5px;
+        }
+
+        .nav .first 
+        {
+            margin-left: 0px;
+        }
+
+        .nav ul 
+        {
+            display: flex;
+        }
+
+        .nav ul li 
+        {
+            padding-right: 10px;
+            list-style-type: none;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 10px;
+        }
+
+        .nav ul :hover 
+        {
+            border: 2px solid white;
+        }
+
+        .nav .join 
+        {
+            margin-left: 100px;
+            height: 35px;
+        }
+
+        .nav .join:hover 
+        {
+            border: 2px solid white;
+        }
+
+        main 
+        {
+            height: 2100px;
+            background-color: rgb(222, 225, 225);
+        }
+
+        main .big img 
+        {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+
+        main .big1 
+        {
+            height: 430px;
+            width: 98%;
+            display: flex;
+            margin-left: 13px;
+            padding-left: 3px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+        }
+        
+        main .big1 .part1 
+        {
+            padding-top: 15px;
+            font-size: 18px;
+            height: 400px;
+            width: 350px;
+            background-color: white;
+            margin: 10px 10px;
+        }
+        main .big1 .part1 h3 
+        {
+            padding-left: 10px;
+        }
+        main .big1 .part1 pre
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            
+        }
+        main .big1 .part1 p
+        {
+            padding-left: 10px;
+            color: rgb(63, 116, 162);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        main .big1 .part1 .subpart1 
+        {
+            margin: 20px 11px;
+            height: 300px;
+            width: 330px;
+        }
+        
+        main .big1 .part1 .subpart1 img 
+        {
+            height: 120px;
+            width: 160px;
+        }
+        main .big1 .part1 .subpart1 pre
+        {
+            padding-bottom: 10px;
+            font-size: 12px;
+        }
+        main .big1 .part1 a
+        {
+            text-decoration: none;
+        }
+        main .big1 .part1 .subpart1 a
+        {
+            color: black;
+        }
+        main .big2
+        {
+            height: 430px;
+            width: 98%;
+            display: flex;
+            margin-left: 13px;
+            padding-left: 3px;
+            margin-bottom: 10px;
+        }
+        
+        main .big2 .part1 
+        {
+            padding-top: 15px;
+            font-size: 18px;
+            height: 400px;
+            width: 350px;
+            background-color: white;
+            margin: 10px 10px;
+        }
+        main .big2 .part1 h3 
+        {
+            padding-left: 10px;
+        }
+        main .big2 .part1 pre
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            
+        }
+        main .big2 .part1 p
+        {
+            padding-left: 10px;
+            color: rgb(63, 116, 162);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        main .big2 .part1 .subpart1 
+        {
+            margin: 20px 11px;
+            height: 300px;
+            width: 330px;
+        }
+        
+        main .big2 .part1 .subpart1 img 
+        {
+            
+            height: 120px;
+            width: 160px;
+        }
+        main .big2 .part1 .subpart1 pre
+        {
+            padding-bottom: 10px;
+            font-size: 12px;
+        }
+        
+        main .big2 .part1 a
+        {
+            text-decoration: none;
+        }
+        
+        main .big2 .part1 .subpart1 a
+        {
+            color: black;
+        }
+        main .big3
+        {
+            height: 270px;
+            width: 95%;
+            background-color: white;
+            margin: 25px;
+            padding: 20px 10px;
+        }
+
+        main .big3 h3
+        {
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        main .big3 .heading 
+        {
+            display: flex;
+        }
+        main .big3 .heading h3
+        {
+            margin-right: 60px;
+        }
+        main .big3 .heading a
+        {
+            text-decoration: none;
+        }
+        main .big3 img
+        {
+            height: 240px;
+            width: 236px;
+        }
+
+        main .female
+        {
+            height: 320px;
+            width: 95%;
+            background-color: white;
+            margin: 25px;
+            padding: 20px 0px 20px 20px;
+        }
+        main .female img
+        {
+            height: 250px;
+            margin: 20px 10px;
+            padding-left: 21px;
+        }
+
+        main .female .heading h2
+        {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        main .female .heading a
+        {
+            text-decoration: none;
+        }
+
+        main .big5
+        {
+            height: 150px;
+            width: 98%;
+            border: 1px solid grey;
+            border-radius: 5px;
+            margin: 2px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            margin-bottom: 110px
+        }
+
+        main .big5 .part a p
+        {
+            font-weight: bold;
+            padding-left: 70px;
+            text-decoration: none;
+        }
+
+        main .big5 .part p
+        {
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 4px;
+        }
+
+        main .big5 .part .signin
+        {
+            margin-left: 35px;
+            height: 30px;
+            width: 150px;
+            border-radius: 4px;
+            background-color: rgb(255, 174, 0);
+            border: none;
+        }
+
+        main .big5 .part .new
+        {
+            margin-left: 28px;
+            margin-top: 3px;
+            margin-bottom: 2px;
+        }
+
+        footer 
+        {
+            color: white;
+            height: 550px;
+            width: 1300px;
+            background-color: #131921;
+            background-color: #0F1111;
+            background-color: #232F3E;
+            display: block;
+            padding-top: 100px;
+            padding-left: 220px;
+        }
+        footer .foot 
+        {
+            height: 60%;
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 100px;
+            padding-right: 35px;
+        }
+        footer .foot .l1
+        {
+            width: 200px;
+            padding-right: 30px;
+        }
+        footer .foot .l2
+        {
+            padding-right: 30px;
+        }
+        footer .foot .l3
+        {
+            padding-right: 30px;
+        }
+        footer .foot .l4
+        {
+            padding-right: 30px;
+        }
+        footer .foot .l1 p
+        {       
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(222, 216, 216);
+            padding-bottom: 10px;
+        }
+        footer .foot .l2 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(222, 216, 216);
+            padding-bottom: 10px;
+        }
+        footer .foot .l3 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(222, 216, 216);
+            padding-bottom: 10px;
+        }
+        footer .foot .l4 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(222, 216, 216);
+            padding-bottom: 10px;
+        }
+        footer .foot .l1 h4
+        {
+            padding-bottom: 10px;
+        }
+        footer .foot .l2 h4
+        {
+            padding-bottom: 10px;
+        }
+        footer .foot .l3 h4
+        {
+            padding-bottom: 10px;
+        }
+        footer .foot .l4 h4
+        {
+            padding-bottom: 10px;
+        }
+        footer .last
+        {
+            height: 100px;
+            width: 1065px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer .last img
+        {
+            height: 30px;
+            width: 100px;
+            margin-right: 40px;
+        }
+        footer .last .bt1 
+        {
+            margin-right: 40px;
+            height: 30px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 2px;
+        }
+        footer .last .bt2
+        {
+            margin-right: 40px;
+            height: 30px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 2px;
+        }
+        footer .last .bt3
+        {
+            margin-right: 40px;
+            height: 30px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 2px;
+        }
+
+        footer ul
+        {
+            margin-right: 40px;
+            padding-right: 400px;
+        }
+
+        footer ul li
+        {
+            list-style: none;
+            font-size: 13px;
+            color: rgb(220, 221, 222);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-right: 30px;
+        }
+        footer ul
+        {
+            display: flex;
+        }
+
+        .black
+        {
+            height: 220px;
+            width: 1419px;
+            padding-top: 50px;
+            padding-left: 100px;
+            background-color: black;
+            background-color: #131921;
+
+        }
+        
+        .black .container
+        {
+            height: 150px;
+            width: 1310px;
+            color: white;
+        }
+        .black .container .up
+        {
+            height: 70px;
+            width: 1310px;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+        }
+        .black .container .down
+        {
+            height: 70px;
+            width: 1310px;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+
+        }
+
+        .black .container .up .l1
+        {
+            padding-right: 35px;
+        }
+        .black .container .up .l2
+        {
+            padding-right: 35px;
+        }
+        .black .container .up .l3
+        {
+            padding-right: 35px;
+        }
+        .black .container .up .l4
+        {
+            padding-right: 35px;
+        }
+        .black .container .up .l5
+        {
+            padding-right: 35px;
+        }
+
+        .black .container .down .l6
+        {
+            padding-left: 70px;
+        }
+        .black .container .down .l7
+        {
+            padding-right: 60px;
+        }
+        .black .container .down .l8
+        {
+            padding-right: 20px;
+        }
+        .black .container .down .l9
+        {
+            padding-right: 20px;
+        }
+        .black .container .down .l10
+        {
+            padding-right: 20px;
+        }
+
+        .black .container .up .l1 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+            padding-right: 20px;
+        }
+        .black .container .up .l2 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+        }
+        .black .container .up .l3 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+        }
+        .black .container .up .l4 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+        }
+        .black .container .up .l5 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+        }
+        .black .container .down .l6 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+            padding-right: 20px;
+
+        }
+        .black .container .down .l7 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+        }
+        .black .container .down .l8 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+        }
+        .black .container .down .l9 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+        }
+        .black .container .down .l10 p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: grey;
+        }
+       
+        .black .end 
+        {
+            font-size: 12px;
+            color: white;
+            width: 500px;
+            margin-left: 500px;
+        }
+        .black .end p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .black .end pre
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+    </style>
+
+    <header id="top">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <span class="in">.in</span>
+        
+        <div class="location">
+            
+            <p class="del">Deliver to</p>
+            <div class="loc">
+                <img src="location.jpeg" alt="">
+                <pre>Seth Vadala 
+360520
+                </pre>
+            </div>
+        </div>
+        
+        <div class="box">
+
+            <button class="all">All</button>
+
+            <input class="searchtext" placeholder="Search Amazon.in" type="text">
+
+            <div class="search">
+                <img src="search.png" alt="">
+            </div>
+        </div>
+
+        <div class="flag">
+            <img src="india.jpeg" alt="">
+            <span>EN</span>
+        </div>
+
+        <div class="box2">
+            <a href=""><p>Hello, sign in</p></a>
+            <div class="list">
+                <a href=""><p><b>Account & List</b></p></a>
+            </div>
+        </div>
+
+        <div class="box3">
+            <a href=""><p class="r">Returns</p>
+                <p class="o">& Orders</p></a>
+        </div>
+
+        <div class="box4">
+            <a href=""><img src="cart.png" alt="cart"></a>
+            <p><b>Cart</b></p>
+        </div>
+    </header>
+
+    <div class="nav">
+        <ul>
+            <li class="first"><img class="menu" src="menu.png" alt="">All</li>
+            <li>Amazon Mini TV</li>
+            <li>Sell</li>
+            <li>Best Seller</li>
+            <li>Today's Deal</li>
+            <li>Mobile</li>
+            <li>New Release</li>
+            <li>Customer Service</li>
+            <li>Prime</li>
+            <li>Electronics</li>
+            <li>Gift Ideas</li>
+            <li>Home & Kitchen</li>
+        </ul>
+        <img class="join
+        " src="img.jpg" alt="">
+    </div>
+
+    <main>
+        <div class="big">
+            <img src="bigimg.jpg" alt="">
+        </div>
+
+        <div class="big1">
+            <div class="part1">
+                <h3>Up to 60% off | Styles for men</h3>
+                <div class="subpart1">
+                    <span class="a1">
+                        <img src="a1.jpg" alt="">
+                    </span>
+
+                    <span class="a2">
+                        <img src="a2.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Clothing                              Footware</pre>
+                    </a>
+                    <span class="a3">
+                        <img src="a3.jpg" alt="">
+                    </span>
+                    
+                    <span class="a4">
+                        <img src="a4.jpg" alt="">
+                    </span>
+                    <a href=""><pre> Watches                              Bags & Luggage</pre>
+                    </a>
+                </div>
+                <p><a href="">see all offers</a></p>
+            </div>  
+               
+            <div class="part1">
+                <h3>Revamp your home in style</h3>
+                <div class="subpart1">
+                    <span class="b1">
+                        <img src="b1.jpg" alt="">
+                    </span>
+
+                    <span class="b2">
+                        <img src="b2.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Bedsheet                             Home Decoration</pre>
+                    </a>
+                    <span class="b3">
+                        <img src="b3.jpg" alt="">
+                    </span>
+                
+                    <span class="b4">
+                        <img src="b4.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Home Storate                      Lighting Solution</pre>
+                    </a>
+                </div>
+                <p><a href="">Explore All</a></p>
+            </div>  
+
+            <div class="part1">
+                <h3>Starting ₹99 | Home improvement </h3>
+                <div class="subpart1">
+                    <span class="c1">
+                        <img src="c1.jpg" alt="">
+                    </span>
+
+                    <span class="c2">
+                        <img src="c2.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Refrigerator                         Air Condition</pre>
+                    </a>
+                    <span class="c3">
+                        <img src="c3.jpg" alt="">
+                    </span>
+                    
+                    <span class="c4">
+                        <img src="c4.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Washing Machine                 Oven</pre>
+                    </a>
+                </div>
+                <p><a href="">Explore All</a></p>
+            </div>  
+
+            <div class="part1">
+                <h3>Up to 60% off | Styles for women</h3>
+                <div class="subpart1">
+                    <span class="d1">
+                        <img src="d1.jpg" alt="">
+                    </span>
+
+                    <span class="d2">
+                        <img src="d2.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Women's Clothing               Footware+ Handbag</pre>
+                    </a>
+                    <span class="d3">
+                        <img src="d3.jpg" alt="">
+                    </span>
+                    
+                    <span class="d4">
+                        <img src="d4.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Watches                              Fashion Jewellery</pre>
+                    </a>
+                </div>
+                <p><a href="">see all offers</a></p>
+            </div>     
+        </div>
+
+        <div class="big2">
+            <div class="part1">
+                <h3>Starting ₹99 | Home improvement</h3>
+                <div class="subpart1">
+                    <span class="e1">
+                        <img src="e1.jpg" alt="">
+                    </span>
+
+                    <span class="e2">
+                        <img src="e2.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Spin,Mops & More               Bathroom Hardware</pre>
+                    </a>
+                    <span class="e3">
+                        <img src="e3.jpg" alt="">
+                    </span>
+                    
+                    <span class="e4">
+                        <img src="e4.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Hammers & Screwdriver       Extension Board & Plug</pre>
+                    </a>
+                </div>
+                <p><a href="">see all offers</a></p>
+            </div>
+
+            <div class="part1">
+                <h3>Automotive essentials|Up to 60% off</h3>
+                <div class="subpart1">
+                    <span class="f1">
+                        <img src="f1.jpg" alt="">
+                    </span>
+
+                    <span class="f2">
+                        <img src="f2.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Cleaning Accessories           Tire & Rim care</pre>
+                    </a>
+                    <span class="f3">
+                        <img src="f3.jpg" alt="">
+                    </span>
+                
+                    <span class="f4">
+                        <img src="f4.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Helmets                               Vaccume Cleaner</pre>
+                    </a>
+                </div>
+                <p><a href="">Explore All</a></p>
+            </div>  
+
+            <div class="part1">
+                <h3>Offers on travel tickets</h3>
+                <div class="subpart1">
+                    <span class="g1">
+                        <img src="g1.jpg" alt="">
+                    </span>
+
+                    <span class="g2">
+                        <img src="g2.jpg" alt="">
+                    </span>
+                    <a href=""><pre> Limited Period Offer | Up      Zero Gateways Fees On 
+  to 17% off                            train</pre></a>
+                    <span class="g3">
+                        <img src="g3.jpg" alt="">
+                    </span>
+                    
+                    <span class="g4">
+                        <img src="g4.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Bus Ticket Booking              Product For your travel 
+                                            Need</pre>
+                    </a>
+                </div>
+                <p><a href="">Explore All</a></p>
+            </div>     
+
+            <div class="part1">
+                <h3>All your wedding shopping</h3>
+                <div class="subpart1">
+                    <span class="h1">
+                        <img src="h1.jpg" alt="">
+                    </span>
+
+                    <span class="h2">
+                        <img src="h2.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Shope for her                      Shop for him</pre>
+                    </a>
+                    <span class="h3">
+                        <img src="h3.jpg" alt="">
+                    </span>
+                    
+                    <span class="h4">
+                        <img src="h4.jpg" alt="">
+                    </span>
+                    <a href="">                    <pre> Pooja Accessories                Explore the Store</pre>
+                    </a>
+                </div>
+                <p><a href="">see all offers</a></p>
+            </div>     
+        </div>
+
+        <div class="big3"> 
+            <div class="heading">
+                <h3>Up to 45% off | Bedroom furniture from stores near you</h3>
+                <a href="">see all offer</a>
+            </div>
+            <img src="i1.jpg" alt="">
+            <img src="i2.jpg" alt="">
+            <img src="i3.jpg" alt="">
+            <img src="i4.jpg" alt="">
+            <img src="i5.jpg" alt="">
+            <img src="i6.jpg" alt="">
+        </div>
+        
+        <div class="female">
+            <div class="heading">
+                <h2>Flat 60% off | Women's kurtas & kurtis for every occasion</h2>
+                <a href="">see all offer</a>
+            </div>
+            <img src="j1.jpg" alt="">
+            <img src="j2.jpg" alt="">
+            <img src="j3.jpg" alt="">
+            <img src="j4.jpg" alt="">
+            <img src="j5.jpg" alt="">
+            <img src="j6.jpg" alt="">
+            <img src="j7.jpg" alt="">
+            <img src="j8.jpg" alt="">
+            <img src="j9.jpg" alt="">
+        </div>
+
+        <div class="big5">
+            <div class="part">
+                <a href="#top"><p>Go on Top</p></a>
+                <p>see personalized recommendations</p>
+                <button class="signin">Sign in</button>
+                <p class="new">New Customer ? <a href="">Start Here</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+            <div class="foot">
+                <div class="l1">
+                    <h4>Get to know Us</h4>
+                    <p>Careers</p>
+                    <p>Blog</p>
+                    <p>About Amazon</p>
+                    <p>Investor Relation</p>
+                    <p>Amazon Devices</p>
+                    <p>Amazon Science</p>
+                </div>
+
+                <div class="l2">
+                    <h4>Make Money With Us</h4>
+                    <p>Sell Products on Amazon</p>
+                    <p>Sell Amazon Business</p>
+                    <p>Sell App On Amazon</p>
+                    <p>Become an Affiliate</p>
+                    <p>Adcertise your Product</p>
+                    <p>Self Publish With Us</p>
+                    <p>Host an Amazon Hub</p>
+                    <p>See More Make Money With Us</p>
+                </div>
+
+                <div class="l3">
+                    <h4>Amazon Payment Products</h4>
+                    <p>Amazon Business Card</p>
+                    <p>Shop With Points</p>
+                    <p>Reload your Balance</p>
+                    <p>Amazon Currency Converter</p>
+                </div>
+
+                <div class="l4">
+                    <h4>Let Us Help You</h4>
+                    <p>Amazon and COVID-19</p>
+                    <p>Your Account</p>
+                    <p>Your Orders</p>
+                    <p>Shipping Rates & Policies</p>
+                    <p>Return & Replcaements</p>
+                    <p>Manage Your Content and Devices</p>
+                    <p>Amazon Assistant</p>
+                    <p>Help</p>
+                </div>
+            </div>
+
+        <div class="last">
+            <img src="logo.png" alt="">
+            <div class="bt1">
+                <p>Hindi</p>
+            </div>
+            <div class="bt2">
+                <p>India - Rupees</p>
+            </div>
+            <div class="bt3">
+                <p>India</p>
+            </div>
+        </div>
+        <ul>
+            <li>India</li>
+            <li>Australia</li>
+            <li>USA</li>
+            <li>Canada</li>
+            <li>China</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>Itly</li>
+            <li>Scotland</li>
+            <li>Dubai</li>
+            <li>Japan</li>
+            <li>Poland</li>
+            <li>Singapor</li>
+            <li>Nethrland</li>
+            <li>Malasia</li>
+            <li>Turky</li>
+        </ul>
+    </footer>
+
+    <div class="black">
+        <div class="container">
+            <div class="up">
+                <div class="l1">
+                    <h5>AbeBooks</h5>
+                    <p>Books, art</p>
+                    <p>collectibles</p>
+                </div>      
+                    
+                <div class="l2">
+                        <h5>Amazon Web </h5>
+                        <p>Scalable Cloud</p>
+                        <p>Computing Services</p>
+                </div>
+                
+            <div class="l3">
+                <h5>Audible</h5>
+                <p>Download</p>
+                <p>Audio Books</p>
+            </div>
+            
+            <div class="l4">
+                <h5>DPReview</h5>
+                <p>Digital</p>
+                <p>Photography</p>
+            </div>
+            
+            <div class="l5">
+                <h5>IMDB</h5>
+                <p>Movies</p>
+                <p>Celebrities</p>
+                </div>
+            </div>
+            <div class="down">
+                <div class="l6">  
+                    <h5>Shopbop</h5>
+                    <p>Designer</p>
+                    <p>Fashion Brands</p>		
+                </div>
+                
+                <div class="l7">
+                    <h5>Amazon Business</h5>
+                    <p>Everything For</p>
+                    <p>Your Business</p>		
+                </div>    
+                <div class="l8">
+                        <h5>Prime Now</h5>
+                        <p>Everything For</p>
+                    <p>Your Business</p>
+                </div>
+                    
+                <div class="l9">
+                        <h5>Amazon Music</h5> 
+                        <p>100 million songs</p>
+                        <p>Over 15 million</p>
+                </div>
+                        
+                    <div class="l10">
+                            <h5>Privacy Notice</h5>
+                            <p>Interest-Based Ads</p>
+                            <p> © 1996-2023, Amazon.com,</p>
+                            <p>Inc. or its affiliates</p>
+                    </div>
+            </div>
+        </div>
+          
+            <div class="end">
+                <p>Conditions & Use of Sale   Privacy Notice  Interest-Based Ads</p>
+                <pre>         © 1996-2023, Amazon.com, Inc. or its affiliates</pre>
+            </div>
+    </div>
+
+</body>
+</html>
